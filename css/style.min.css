@@ -7,6 +7,8 @@
 :root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
+    --main-red-shadow: #721d28;
+    --main-red-highlight: #c44556;
     --main-black: #0e1111;
     --main-gray: #343434;
     --main-yellow: #FFA812;
@@ -33,23 +35,23 @@ html {
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     html {
-      font-size: 80%;
+      font-size: 90%;
     }
   }
   
-  /* 980px / 16px = 61.25em */
-  @media (max-width: 61.25em) {
+/* 980px / 16px = 61.25em */
+@media (max-width: 61.25em) {
     html {
-      font-size: 74%;
-    }
-  }
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
+        font-size: 84%;
+}
+}
+
+/* 460px / 16px = 28.75em */
+@media (max-width: 28.75em) {
     html {
-      font-size: 70%;
-    }
-  }
+        font-size: 80%;
+}
+}
 
 body::-webkit-scrollbar {
 	width: 12px;
@@ -105,12 +107,14 @@ img {
     height: auto;
 }
 
-i.fa-scale-1 {
+i.fa-scale-up {
     font-size: 7.8rem;
 }
 
 form {
+    font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
+    line-height: 1.5;
     width: 100%;
     margin: 0 auto;
 }
@@ -126,7 +130,7 @@ button, .button {
     font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
-    box-shadow: 0px 6px 0px #721d28;
+    box-shadow: 0px 6px 0px var(--main-red-shadow);
     transition: all 0.05s;
     position: relative;
     top: 0;
@@ -134,12 +138,12 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    background: #c44556;
+    background: var(--main-red-highlight);
 }
 
 button:active, .button:active {
     top: 3px;
-    box-shadow: 0px 0px 0px #721d28;
+    box-shadow: 0px 0px 0px var(--main-red-shadow);
 }
 
 button.submit-button {
@@ -184,13 +188,13 @@ input:focus, textarea:focus {
 blockquote {
     font-size: 2.4rem;
     font-style: italic;
-    color: #555555;
+    color: var(--main-gray);
     padding: 7.2rem 3.6rem 4.2rem 6rem;
     border-left: 8px solid var(--main-yellow);
     border-right: 8px solid var(--main-yellow);
-    line-height :1.6;
+    line-height : 1.5;
     position: relative;
-    background:#EDEDED;
+    background:var(--main-white);
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 }
 
@@ -209,7 +213,7 @@ blockquote::after {
 }
   
 blockquote footer {
-    color:#333333;
+    color: var(--main-gray);
     font-style: normal;
     font-weight: bold;
     margin-top: 1.2rem;
@@ -241,16 +245,11 @@ blockquote footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 1.5;
 }
 
 .socials i {
     margin: 0 2.4rem;
-}
-
-@media(max-width:75em) {
-    .socials i {
-        margin-top: 1.8rem;
-    }
 }
 
 .socials a {
@@ -353,7 +352,7 @@ blockquote footer {
 
 .overlay {
     position: fixed;
-    background: #2a3140;
+    background: var(--main-blue);
     top: 0;
     left: 0;
     width: 100%;
@@ -424,20 +423,18 @@ blockquote footer {
 
 .overlay-menu ul li a {
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.09);
     color: var(--main-white);
     text-decoration: none;
     font-size: 6rem;
     padding: 10px 40px;
     margin: 5px 0;
     transition: 0.2s;
-    background: #2a3140;
+    background: var(--main-blue);
 }
 
 .overlay-menu ul li a:hover, .overlay-menu ul li a:active, .overlay-menu ul li a:focus {
     transform: translateX(-2px);
     padding-left: 80px;
-    border: 1px solid var(--main-white);
 }
 
 @keyframes fadeInLeft {

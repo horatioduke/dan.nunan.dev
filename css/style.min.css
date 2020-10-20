@@ -65,22 +65,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
-h1 { font-size: 4.2rem; }
-h2 { font-size: 3.6rem; }
-h3 { font-size: 3.0rem; }
-h4 { font-size: 2.4rem; }
-h5 { font-size: 1.8rem; }
-h6 { font-size: 1.2rem; }
+h1 { font-size: 6.0rem; }
+h2 { font-size: 5.4rem; }
+h3 { font-size: 4.8rem; }
+h4 { font-size: 4.2rem; }
+h5 { font-size: 3.6rem; }
+h6 { font-size: 3.0rem; }
 
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     line-height: 1.5;
-}
-
-img {
-    width: 100%;
-    height: auto;
 }
 
 a {
@@ -105,8 +100,17 @@ p a:hover {
     background-position: 0% 100%;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+i.fa-scale-1 {
+    font-size: 7.8rem;
+}
+
 form {
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -115,11 +119,11 @@ button, .button {
     cursor: pointer;
     outline: none; 
     border: 0;
-    border-radius: 0.25rem;
+    border-radius: 0.24rem;
     background: var(--main-red);
     color: var(--main-white);
-    padding: 1rem 3rem;
-    font-size: 1.5rem;
+    padding: 1.8rem 3.6rem;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: 0px 6px 0px #721d28;
@@ -149,21 +153,21 @@ label {
 input, textarea {
     width: 100%;
     max-width: 100%;
-    padding: 1rem;
-    margin: 1rem 0;
+    padding: 1.8rem;
+    margin: 1.8rem 0;
     color: var(--main-black);
     border: 1px solid;
     border-color: var(--main-white);
     background-color: var(--main-white);
     background-clip: padding-box;
-    border-radius: 0.25rem;
+    border-radius: 0.24rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: var(--main-black);
     box-shadow: 5px 5px var(--main-black);
 }
 
 textarea {
-    min-height: 12rem;
+    min-height: 18rem;
     min-width: 100%;
 }
   
@@ -174,14 +178,14 @@ input:focus, textarea:focus {
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 blockquote {
-    font-size: 1.4em;
+    font-size: 2.4rem;
     font-style: italic;
     color: #555555;
-    padding: 5rem 2rem 3.5rem 5rem;
+    padding: 7.2rem 3.6rem 4.2rem 6rem;
     border-left: 8px solid var(--main-yellow);
     border-right: 8px solid var(--main-yellow);
     line-height :1.6;
@@ -194,10 +198,10 @@ blockquote::before {
     font-family: Arial;
     content: "\201C";
     color: var(--main-red);
-    font-size: 4em;
+    font-size: 7.2rem;
     position: absolute;
-    left: 2.2rem;
-    top: 2.2rem;
+    left: 3.0rem;
+    top: 3.6rem;
 }
 
 blockquote::after {
@@ -208,7 +212,7 @@ blockquote footer {
     color:#333333;
     font-style: normal;
     font-weight: bold;
-    margin-top:1em;
+    margin-top: 1.2rem;
 }
 
 
@@ -220,12 +224,8 @@ blockquote footer {
     background-color: var(--main-yellow);
 }
 
-.smaller-heading {
-    font-size: 1.8rem;
-}
-
 .tuck {
-    display:inline-block;
+    display: inline-block;
 }
 
 .inverted {
@@ -241,12 +241,16 @@ blockquote footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
 }
 
 .socials i {
-    margin-right: 1rem;
+    margin: 0 2.4rem;
+}
+
+@media(max-width:75em) {
+    .socials i {
+        margin-top: 1.8rem;
+    }
 }
 
 .socials a {
@@ -273,22 +277,22 @@ blockquote footer {
     z-index: 10;
     display: block;
     position: fixed;
-    padding: 1.8rem;
-    top: 1.2rem;
-    left: 1.2rem;
-    width: 30px;
-    height: 25px;
+    padding: 3.6rem;
+    top: 2.4rem;
+    left: 2.4rem;
+    width: 4.8rem;
+    height: 4.8rem;
 }
 
 .nav-burger {
     position: fixed;
-    left: 2rem;
-    top: 2.2rem;
+    left: 3.9rem;
+    top: 4.8rem;
     cursor: pointer;
     background: var(--main-white);
     box-sizing: border-box;
     background-clip: content-box;
-    width: 30px;
+    width: 4.2rem;
     height: 25px;
     border-top: 11px solid transparent;
     border-bottom: 11px solid transparent;
@@ -302,7 +306,7 @@ blockquote footer {
     content: "";
     position: absolute;
     background: var(--main-white);
-    height: 3px;
+    height: 0.3rem;
     width: 100%;
     left: 0;
     will-change: rotate;
@@ -313,12 +317,12 @@ blockquote footer {
 }
 
 .nav-burger:before {
-    top: -10px;
+    top: -1.2rem;
     width: 90%;
 }
 
 .nav-burger:after {
-    bottom: -10px;
+    bottom: -1.2rem;
     width: 80%;
 }
 
@@ -423,8 +427,8 @@ blockquote footer {
     border: 1px solid rgba(255, 255, 255, 0.09);
     color: var(--main-white);
     text-decoration: none;
-    font-size: 3em;
-    padding: 10px 40px 10px 40px;
+    font-size: 6rem;
+    padding: 10px 40px;
     margin: 5px 0;
     transition: 0.2s;
     background: #2a3140;
@@ -455,7 +459,7 @@ blockquote footer {
 .diagonal {
     clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
     min-height: 100vh;
-    padding: 2.5rem;
+    padding: 3.0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -463,17 +467,17 @@ blockquote footer {
 }
 
 .non-diagonal {
-    padding: 2.5rem;
+    padding: 3.0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-@media(max-width:1200px) {
+@media(max-width:75em) {
     .diag-inv {
-        padding-top: 16rem;
-        padding-bottom: 16rem;
+        padding-top: 24rem;
+        padding-bottom: 24rem;
     }
 }
 
@@ -486,15 +490,15 @@ blockquote footer {
     justify-content: center;
 }
 
-@media(max-width:1200px) {
+@media(max-width:75em) {
     .flexo-grid {
         flex-direction: column;
     }
 }
 
 .flexo-tile {
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding: 1.8rem;
+    margin: 1.8rem;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -512,6 +516,10 @@ blockquote footer {
     text-shadow: 1px 1px 1px var(--main-gray);
 }
 
+.welcome-section h2 {
+    margin: 0;
+}
+
 .ticker-tape-area .input-text {
     visibility: hidden;
     display: none;
@@ -519,8 +527,7 @@ blockquote footer {
 
 .ticker-tape-area .output-text {
     display: block;
-    min-height: 6rem;
-    margin-bottom: 3.2rem;
+    min-height: 9.0rem;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
@@ -556,8 +563,8 @@ blockquote footer {
 }
 
 .blurb-half {
-    padding: 1.5rem;
-    margin: 1.5rem;
+    padding: 2.4rem;
+    margin: 2.4rem;
     flex-grow: 1;
     flex-basis: 0;
 }
@@ -574,13 +581,13 @@ blockquote footer {
     text-align: left;
 }
 
-@media(min-width:1200px) {
+@media(min-width:75em) {
     .blurb-half h2, .blurb-half p {
         margin-top: 0;
     }
 }
 
-@media(max-width:1200px) {
+@media(max-width:75em) {
     .about-section {
         flex-direction: column;
     }
@@ -595,7 +602,11 @@ blockquote footer {
 
 .collab-grid {
     align-items: center;
-    justify-content: space-evenly;
+}
+
+.collab-tile {
+    margin-left: 4.2rem;
+    margin-right: 4.2rem;
 }
 
 
@@ -608,11 +619,11 @@ blockquote footer {
 
 .testimonial-profile-pic,
 .testimonial-text {
-    padding: 1.5rem;
+    padding: 1.8rem;
 }
 
 .testimonial-profile-pic img {
-    max-width: 200px;
+    max-width: 24rem;
     border-radius: 50%;
 }
 
@@ -620,7 +631,7 @@ blockquote footer {
 --------------------------------------------- */
 
 .contact-form {
-    max-width: 48rem;
+    max-width: 72rem;
 }
 
 
@@ -629,5 +640,12 @@ blockquote footer {
 
 .main-footer {
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 4.2rem;
+}
+
+@media(max-width:75em) {
+    .footer-third {
+        margin: 0;
+        padding: 0;
+    }
 }

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dan Nunan • Web UX and Development</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+
+    <link
+        rel="stylesheet"
+        href="css/style.min.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script
+        src="https://use.fontawesome.com/1d1478e2c0.js"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="overlay">
+        <nav class="overlay-menu">  
+            <ul role="menu">
+                <li><a href="#welcome" role="menuitem">Welcome</a></li>
+                <li><a href="#about" role="menuitem">What I Do</a></li>
+                <li><a href="#portfolio" role="menuitem">Latest Work</a></li>
+                <li><a href="#contact" role="menuitem">Contact Me</a></li>
+                <li><a href="https://github.com/horatioduke" role="link"><i class="fa fa-github"></i> GitHub</a></li>
+            </ul> 
+        </nav>
+    </div>
+    
+    <div class="burger-bun">
+        <div class="nav-burger" role="navigation" id="nav-toggle"></div>
+    </div>
+
+
+    <!-- START WELCOME SECTION -->
+    <section class="welcome-section diagonal" id="welcome">
+
+        <div class="hero">
+
+            <header class="hero-header aos-fix">
+
+                <h1>
+                    <div data-aos="flip-up" class="tuck">Hi, </div>
+                    <div data-aos="flip-up" data-aos-delay="100" class="tuck">I'm </div>
+                    <div data-aos="flip-up" data-aos-delay="200" class="dan-special tuck">Dan</div>
+                </h1>
+
+                <h2>
+                    <div data-aos="fade-left" data-aos-delay="300" class="tuck">I </div>
+                    <div data-aos="fade-left" data-aos-delay="350" class="tuck">make </div>
+                    <div data-aos="fade-left" data-aos-delay="400" class="tuck">websites </div>
+                    <div data-aos="fade-left" data-aos-delay="450" class="tuck">and </div>
+                    <div data-aos="fade-left" data-aos-delay="500" class="tuck">user </div>
+                    <div data-aos="fade-left" data-aos-delay="550" class="tuck">interfaces </div>
+                    <div data-aos="fade-left" data-aos-delay="600" class="tuck">.</div>
+                </h2>
+
+            </header>
+
+            <div class="ticker-tape-area">
+                
+                <p class="output-text" data-text></p>
+                <p class="input-text">I am a designer and front-end developer based in London</p>
+                <p class="input-text">With over five years of commercial experience</p>
+                <p class="input-text">Creating successful websites for small and large scale businesses</p>
+
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="700">
+                <a class="button learn-more" href="#about">Learn More</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START WHAT I DO SECTION -->
+    <section class="about-section aos-fix" id="about">
+        
+        <header class="blurb-half pleased" data-aos="fade-right" data-aos-delay="250">
+            <h2>Pleased to meet you! A bit about me:</h2>
+        </header>
+
+        <div class="blurb-half specialize" data-aos="fade-left" data-aos-delay="350">
+            <p>I specialise in building user interfaces for content-managed sites and applications.</p>
+            <p>All coded from scratch, with <a href="#skillz">mad skillz</a>, love and care.</p>
+            <p>Feel free to take a look at my <a href="#portfolio">latest work.</a></p>
+            <p>Or <a href="#contact">get in touch</a> and we can start discussing your next big project.</p>
+        </div>
+
+    </section>
+    <!-- END WHAT I DO SECTION -->
+
+    <!-- START SKILLZ SECTION -->
+    <section class="skillz-section diagonal inverted diag-inv centered-text" id="skillz">
+
+        <header class="skillz-header" data-aos="fade-down">
+            <h2>Mad Skillz</h2>
+        </header>
+
+        <div class="skillz-grid flexo-grid">
+            <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="250">
+                <i class="fa fa-pencil fa-4x"></i>
+                <h3 class="smaller-heading">Design and Front-End Development</h3>
+                <p>I code and bring responsive websites to life with a user-driven approach that achieves your business goals. I speak HTML, Python, PHP, JS, SCSS, SASS.</p>
+            </div>
+    
+            <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="350">
+                <i class="fa fa-universal-access fa-4x"></i>
+                <h3 class="smaller-heading">Performance, SEO, and Accessibility Testing</h3>
+                <p>I can make your website fast, easy to find, and reach the widest audience possible, using the latest testing measures and WCAG guidelines.</p>
+            </div>
+    
+            <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="450">
+                <i class="fa fa-cogs fa-4x"></i>
+                <h3 class="smaller-heading">WordPress or Drupal? I Have You Covered</h3>
+                <p>Manage your website using one of two of the web's most popular content management systems.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- END SKILLZ SECTION -->
+
+    <!-- START LATEST WORK SECTION -->
+    <section class="portfolio-section centered-text non-diagonal" id="portfolio">
+
+        <header class="portfolio-header">
+            <h2 data-aos="fade-down">
+                Latest Work
+            </h2>
+            <p data-aos="fade-down" data-aos-delay="250" class="header-sub">
+                A few of my most recent projects.
+            </p>
+        </header>
+
+        <div class="portfolio-grid flexo-grid">
+
+            <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="250">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">Maja Kosim Photography</h3>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+            <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="350">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">Beta Boys Productions</h3>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+            <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="450">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">Perfect Sound World</h3>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- END LATEST WORK SECTION -->
+
+    <!-- START COLLABORATORS SECTION -->
+
+    <section class="collab-section diagonal inverted diag-inv" id="collaborators">
+
+        <header class="collab-header centered-text" data-aos="flip-up">
+            <h2>
+                I've also collaborated with these awesome people:
+            </h2>
+        </header>
+    
+        <div class="collab-grid flexo-grid">
+            <div class="collab-tile flexo-tile" data-aos="fade-right" data-aos-delay="300">
+                <img src="img/logo1.png" alt="test">
+            </div>
+            <div class="collab-tile flexo-tile" data-aos="fade-up" data-aos-delay="900">
+                <img src="img/logo2.png" alt="test">
+            </div>
+            <div class="collab-tile flexo-tile" data-aos="fade-left" data-aos-delay="600">
+                <img src="img/logo3.png" alt="test">
+            </div>
+        </div>
+    
+    </section>
+
+    <!-- END COLLABORATORS SECTION -->
+
+    <!-- START OTHER PROJECTS SECTION -->
+    <section class="other-projects-section non-diagonal centered-text" id="other-projects">
+
+        <header class="other-projects-header">
+            <h2 data-aos="fade-down">
+                Other Projects
+            </h2>
+            <p class="header-sub" data-aos="fade-down" data-aos-delay="250">
+                A few dabblings here and there with Python and PHP.
+            </p>
+        </header>
+
+        <div class="other-projects-grid flexo-grid">
+
+            <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="250">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">"Peanut" Wordpress Theme</h3>
+                <p class="project-subtitle">A simple, elegant, fully-customisable photo portfolio theme.</p>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+            <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="350">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">Fallout - On This Day</h3>
+                <p class="project-subtitle">Twitter bot that generates Fallout lore based on day of the year.</p>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+            <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="450">
+                <img class="project-image" src="img/project.jpg" alt="project" />
+                <h3 class="project-title smaller-heading">ARWhatever</h3>
+                <p class="project-subtitle">A Python-based module that converts Sony ARW files to JPEG format</p>
+                <button class="project-view-btn">View Project</button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- START OTHER PROJECTS SECTION -->
+
+    <!-- START TESTIMONIAL SECTION -->
+    <section class="testimonial-section non-diagonal" id="testimonial">
+
+        <header class="testimonial-header centered-text" data-aos="fade-down">
+            <h2>
+                What Other People Say
+            </h2>
+        </header>
+
+            <div class="testimonial-grid flexo-grid aos-fix">
+
+                <div class="testimonial-profile-pic" data-aos="fade-right" data-aos-delay="300">
+                    <img src="img/profile.png" alt="test"/>
+                </div>
+
+                <div class="testimonial-text" data-aos="fade-left" data-aos-delay="600">
+                    <blockquote class="testimonial">
+                        <p>Dan is the reason I'm so rich, and he gives excellent back rubs.</p>
+                        <footer>
+                            <cite>Bill Gates</cite>
+                            <p class="advocate-position">CEO of Microsoft</p>
+                        </footer>
+                    </blockquote>
+                </div>
+
+            </div>
+
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+    <section class="contact-section non-diagonal" id="contact">
+
+        <header class="contact-header centered-text">
+
+            <h2 data-aos="fade-down">
+                Get In Touch
+            </h2>
+            <p data-aos="fade-down" data-aos-delay="200">
+                Tell me about your grand plans.
+            </p>
+
+        </header>
+
+        <form id="contact-form" class="contact-form">
+
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" type="text" name="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input id="email" type="email" name="email" class="form-control"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label id="message-label" for="message">Your Message</label>
+                <textarea id="message" class="input-message-textarea" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+
+    </section>
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER -->
+    <footer class="main-footer flexo-grid centered-text">
+
+        <div class="footer-third flexo-grid">
+            <p> &copy; Dan Nunan 2020</p>
+        </div>
+
+        <div class="footer-third flexo-grid">
+            <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> using <a href="https://drupal.org">Drupal</a></p>            
+        </div>
+
+        <div class="footer-third flexo-grid">
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
+            </ul>            
+        </div>
+
+    </footer>
+    <!-- END FOOTER -->
+
+</body>
+
+<!-- START SCRIPTS -->
+<script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous">
+</script>
+
+<script
+    language="JavaScript"
+    type="text/javascript"
+    src="js/scripts.min.js">
+</script>
+
+<script
+    src="https://unpkg.com/aos@next/dist/aos.js">
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+<!-- END SCRIPTS -->
+
+</html>

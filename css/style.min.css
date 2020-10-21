@@ -243,7 +243,7 @@ blockquote footer {
 }
 
 .socials {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     line-height: 1.5;

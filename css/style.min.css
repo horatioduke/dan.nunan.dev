@@ -1,7 +1,42 @@
-/* Ello! This is the stylesheet for dan.nunan.dev */
+/*
+Ello! This is the stylesheet for dan.nunan.dev
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Generic
+    - Colour Variables, Selectors and Scrollbar
+    - Font Sizing and REM Scaling
+    - Link Styling
+    - Form Elements
+    - Blockquotes
+# Fixes, Tweaks and Additional Custom Classes
+    - Image and FontAwesome Icon Fixes
+    - dan.nunan.dev Specials
+    - Socials
+# Main Navigation
+    - The Burger
+    - The Menu Overlay
+# Section Styling
+    - General Section Styling
+    - The "Flexo" Grid and Tiles
+    - Welcome Section
+    - About Section
+    - Collaboration Section
+    - Testimonial Section
+    - Contact Section
+    - Footer
+
+--------------------------------------------------------------*/
 
 
-/* General Styling - Elements & Selectors
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Colour Variables, Selectors and Scrollbar
 --------------------------------------------- */
 
 :root {
@@ -24,6 +59,19 @@
     color: var(--main-red);
     background: var(--main-yellow);
 }
+
+body::-webkit-scrollbar {
+	width: 12px;
+	background-color: var(--main-black);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-white);
+}
+
+
+/* Font and REM Sizing
+--------------------------------------------- */
 
 html {
     font-size: 62.5%;
@@ -53,15 +101,6 @@ html {
 }
 }
 
-body::-webkit-scrollbar {
-	width: 12px;
-	background-color: var(--main-black);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: var(--main-white);
-}
-
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -79,6 +118,10 @@ p {
     font-size: 2.4rem;
     line-height: 1.5;
 }
+
+
+/* Link Styling
+--------------------------------------------- */
 
 a {
     text-decoration: none;
@@ -102,14 +145,9 @@ p a:hover {
     background-position: 0% 100%;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
 
-i.fa-scale-up {
-    font-size: 7.8rem;
-}
+/* Form Elements
+--------------------------------------------- */
 
 form {
     font-family: 'Open Sans', sans-serif;
@@ -186,6 +224,10 @@ input:focus, textarea:focus {
     margin-bottom: 1.8rem;
 }
 
+
+/* Blockquotes
+--------------------------------------------- */
+
 blockquote {
     font-size: 2.4rem;
     font-style: italic;
@@ -220,8 +262,25 @@ blockquote footer {
     margin-top: 1.2rem;
 }
 
+/*--------------------------------------------------------------
+# Fixes, Tweaks and Additional Custom Classes
+--------------------------------------------------------------*/
 
-/* Fixes, Tweaks & Additional Custom Classes
+
+/* Image and FontAwesome Icon Fixes
+--------------------------------------------- */
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+i.fa-scale-up {
+    font-size: 7.2rem;
+}
+
+
+/* dan.nunan.dev Specials
 --------------------------------------------- */
 
 .dan-special {
@@ -241,6 +300,15 @@ blockquote footer {
 .centered-text {
     text-align: center;
 }
+
+.aos-fix {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/* Socials
+--------------------------------------------- */
 
 .socials {
     display: inline-block; /* Fixes the margin in Safari */
@@ -262,13 +330,13 @@ blockquote footer {
     color: var(--main-white);
 }
 
-.aos-fix {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+
+/*--------------------------------------------------------------
+# Main Navigation
+--------------------------------------------------------------*/
 
 
-/* Main Navigation
+/* The Burger
 --------------------------------------------- */
 
 .burger-bun  {
@@ -347,6 +415,10 @@ blockquote footer {
     background: var(--main-black);
     width: 100%;
 }
+
+
+/* The Menu Overlay
+--------------------------------------------- */
 
 .overlay {
     position: fixed;
@@ -447,6 +519,10 @@ blockquote footer {
    }
 }
 
+/*--------------------------------------------------------------
+# Section Styling
+--------------------------------------------------------------*/
+
 
 /* General Section Styling
 --------------------------------------------- */
@@ -478,7 +554,7 @@ blockquote footer {
 }
 
 
-/* "Flexo" Grid
+/* The "Flexo" Grid and Tiles
 --------------------------------------------- */
 
 .flexo-grid {
@@ -593,6 +669,7 @@ blockquote footer {
     }
 }
 
+
 /* Collaboration Section
 --------------------------------------------- */
 
@@ -606,7 +683,7 @@ blockquote footer {
 }
 
 
-/* Testimonials Section
+/* Testimonial Section
 --------------------------------------------- */
 
 .testimonial-grid {
@@ -623,6 +700,7 @@ blockquote footer {
     border-radius: 50%;
 }
 
+
 /* Contact Section
 --------------------------------------------- */
 
@@ -631,7 +709,7 @@ blockquote footer {
 }
 
 
-/* Footer Section
+/* Footer
 --------------------------------------------- */
 
 .main-footer {

@@ -7,6 +7,7 @@ Ello! This is the stylesheet for dan.nunan.dev
 ----------------------------------------------------------------
 
 # Generic
+    - "Modern" Normalize
     - Colour Variables, Selectors and Scrollbar
     - Font Sizing and REM Scaling
     - Link Styling
@@ -36,6 +37,149 @@ Ello! This is the stylesheet for dan.nunan.dev
 # Generic
 --------------------------------------------------------------*/
 
+/* "Modern" Normalize
+--------------------------------------------- */
+
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+:root {
+    -moz-tab-size: 4;
+    tab-size: 4
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'
+}
+
+hr {
+    height: 0;
+    color: inherit
+}
+
+abbr[title] {
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+table {
+    text-indent: 0;
+    border-color: inherit
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+select {
+    text-transform: none
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+:-moz-ui-invalid {
+    box-shadow: none
+}
+
+legend {
+    padding: 0
+}
+
+progress {
+    vertical-align: baseline
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+summary {
+    display: list-item
+}
+
+
 /* Colour Variables, Selectors and Scrollbar
 --------------------------------------------- */
 
@@ -47,26 +191,26 @@ Ello! This is the stylesheet for dan.nunan.dev
     --main-black: #0e1111;
     --main-gray: #343434;
     --main-yellow: #FFA812;
-    --main-blue: #2a3140;
+    --main-blue: #2a3140
 }
   
 ::selection {
     color: var(--main-red);
-    background: var(--main-yellow);
+    background: var(--main-yellow)
 }
 
 ::-moz-selection {
     color: var(--main-red);
-    background: var(--main-yellow);
+    background: var(--main-yellow)
 }
 
 body::-webkit-scrollbar {
 	width: 12px;
-	background-color: var(--main-black);
+	background-color: var(--main-black)
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: var(--main-white);
+    background-color: var(--main-white)
 }
 
 
@@ -77,27 +221,27 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     background-color: var(--main-black);
-    color: var(--main-white);
+    color: var(--main-white)
 }
 
 /* 1200px / 16px = 75em */
 @media (max-width: 75em) {
     html {
-      font-size: 82%;
+      font-size: 82%
     }
   }
   
 /* 980px / 16px = 61.25em */
 @media (max-width: 61.25em) {
     html {
-        font-size: 78%;
+        font-size: 78%
 }
 }
 
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
     html {
-        font-size: 72%;
+        font-size: 72%
 }
 }
 
@@ -106,17 +250,17 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 900;
 }
 
-h1 { font-size: 6.0rem; }
-h2 { font-size: 5.4rem; }
-h3 { font-size: 4.8rem; }
-h4 { font-size: 4.2rem; }
-h5 { font-size: 3.6rem; }
-h6 { font-size: 3.0rem; }
+h1 { font-size: 6.0rem }
+h2 { font-size: 5.4rem }
+h3 { font-size: 4.8rem }
+h4 { font-size: 4.2rem }
+h5 { font-size: 3.6rem }
+h6 { font-size: 3.0rem }
 
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 
@@ -135,14 +279,14 @@ p a {
     background: linear-gradient(to right, var(--main-white) 50%, var(--main-black) 50%);
     background-size: 220% 100%;
     background-position: 99% 100%;
-    transition: all .2s ease-out;
+    transition: all .2s ease-out
 }
 
 p a:hover {
     color: var(--main-red);
     font-weight: 700;
     border-bottom: none;
-    background-position: 0% 100%;
+    background-position: 0% 100%
 }
 
 
@@ -154,7 +298,7 @@ form {
     font-size: 2.4rem;
     line-height: 1.5;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 button, .button {
@@ -173,24 +317,24 @@ button, .button {
     top: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 button:hover, .button:hover {
-    background: var(--main-red-highlight);
+    background: var(--main-red-highlight)
 }
 
 button:active, .button:active {
     top: 3px;
-    box-shadow: 0px 0px 0px var(--main-red-shadow);
+    box-shadow: 0px 0px 0px var(--main-red-shadow)
 }
 
 button.submit-button {
-    width: 100%;
+    width: 100%
 }
 
 label {
-    display: block;
+    display: block
 }
 
 input, textarea {
@@ -206,22 +350,22 @@ input, textarea {
     border-radius: 0.24rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: var(--main-black);
-    box-shadow: 5px 5px var(--main-black);
+    box-shadow: 5px 5px var(--main-black)
 }
 
 textarea {
     min-height: 18rem;
-    min-width: 100%;
+    min-width: 100%
 }
   
 input:focus, textarea:focus {
     outline: none;
     border-color: var(--main-gray);
-    box-shadow: 5px 5px var(--main-gray);
+    box-shadow: 5px 5px var(--main-gray)
 }
 
 .form-group {
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.8rem
 }
 
 
@@ -238,7 +382,7 @@ blockquote {
     line-height : 1.5;
     position: relative;
     background:var(--main-white);
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%)
 }
 
 blockquote::before {
@@ -248,18 +392,18 @@ blockquote::before {
     font-size: 7.2rem;
     position: absolute;
     left: 3.0rem;
-    top: 4.8rem;
+    top: 4.8rem
 }
 
 blockquote::after {
-    content: '';
+    content: ''
 }
   
 blockquote footer {
     color: var(--main-gray);
     font-style: normal;
     font-weight: bold;
-    margin-top: 1.2rem;
+    margin-top: 1.2rem
 }
 
 /*--------------------------------------------------------------
@@ -272,11 +416,11 @@ blockquote footer {
 
 img {
     width: 100%;
-    height: auto;
+    height: auto
 }
 
 i.fa-scale-up {
-    font-size: 7.2rem;
+    font-size: 7.2rem
 }
 
 
@@ -285,25 +429,25 @@ i.fa-scale-up {
 
 .dan-special {
     color: var(--main-red);
-    background-color: var(--main-yellow);
+    background-color: var(--main-yellow)
 }
 
 .tuck {
-    display: inline-block;
+    display: inline-block
 }
 
 .inverted {
     background-color: var(--main-white);
-    color: var(--main-black);
+    color: var(--main-black)
 }
 
 .centered-text {
-    text-align: center;
+    text-align: center
 }
 
 .aos-fix {
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden
 }
 
 
@@ -314,20 +458,20 @@ i.fa-scale-up {
     display: inline-block; /* Fixes the margin in Safari */
     justify-content: center;
     align-items: center;
-    line-height: 1.5;
+    line-height: 1.5
 }
 
 .socials i {
-    margin: 0 2.4rem;
+    margin: 0 2.4rem
 }
 
 .socials a {
     color: var(--main-red);
-    transition: all .2s ease-out;
+    transition: all .2s ease-out
 }
 
 .socials a:hover {
-    color: var(--main-white);
+    color: var(--main-white)
 }
 
 
@@ -349,7 +493,7 @@ i.fa-scale-up {
     top: 24px;
     right: 24px;
     width: 48px;
-    height: 48px;
+    height: 48px
 }
 
 .nav-burger {
@@ -366,7 +510,7 @@ i.fa-scale-up {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out
 }
 
 .nav-burger:before, .nav-burger:after {
@@ -379,25 +523,25 @@ i.fa-scale-up {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease
 }
 
 .nav-burger:before {
-    top: 12px;
+    top: 12px
 }
 
 .nav-burger:after {
     bottom: 12px;
-    width: 80%;
+    width: 80%
 }
 
 .nav-burger:hover:before, .nav-burger:hover:after {
-    width: 100%;
+    width: 100%
 }
 
 .nav-burger.active {
     background: transparent;
-    background-clip: content-box;
+    background-clip: content-box
 }
 
 .nav-burger.active:before {
@@ -405,7 +549,7 @@ i.fa-scale-up {
     transform: rotate(135deg);
     top: 0;
     background: var(--main-black);
-    width: 100%;
+    width: 100%
 }
 
 .nav-burger.active:after {
@@ -413,7 +557,7 @@ i.fa-scale-up {
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
     background: var(--main-black);
-    width: 100%;
+    width: 100%
 }
 
 
@@ -433,13 +577,13 @@ i.fa-scale-up {
     visibility: hidden;
     transition: all 0.4s ease-in-out;
     overflow: hidden;
-    z-index: 3;
+    z-index: 3
 }
 
 .overlay.open {
     opacity: 1;
     visibility: visible;
-    transform: scale(1);
+    transform: scale(1)
 }
 
 .overlay.open li {
@@ -449,30 +593,30 @@ i.fa-scale-up {
     transform: rotate(-7deg);
     transform-origin: left bottom;
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: 900
 }
 
 .overlay.open li:nth-of-type(2) {
-    animation-delay: 0.5s;
+    animation-delay: 0.5s
 }
 
 .overlay.open li:nth-of-type(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.6s
 }
 
 .overlay.open li:nth-of-type(4) {
-    animation-delay: 0.7s;
+    animation-delay: 0.7s
 }
 
 .overlay.open li:nth-of-type(5) {
-    animation-delay: 0.8s;
+    animation-delay: 0.8s
 }
 
 .overlay-menu {
     position: absolute;
     text-align: left;
     left: 10vw;
-    bottom: 10vw;
+    bottom: 10vw
 }
 
 .overlay-menu ul {
@@ -481,14 +625,14 @@ i.fa-scale-up {
     margin: 0 auto;
     display: block;
     position: relative;
-    height: 100%;
+    height: 100%
 }
 
 .overlay-menu ul li {
     display: block;
     position: relative;
     opacity: 0;
-    width: 100%;
+    width: 100%
 }
 
 .overlay-menu ul li a {
@@ -499,23 +643,23 @@ i.fa-scale-up {
     padding: 10px 40px;
     margin: 5px 0;
     transition: 0.2s;
-    background: var(--main-blue);
+    background: var(--main-blue)
 }
 
 .overlay-menu ul li a:hover, .overlay-menu ul li a:active, .overlay-menu ul li a:focus {
     transform: translateX(-2px);
-    padding-left: 80px;
+    padding-left: 80px
 }
 
 @keyframes fadeInLeft {
     0% {
         opacity: 0;
-        left: 50px;
+        left: 50px
    }
     100% {
         opacity: 1;
         left: 0;
-        transform: rotate(0deg);
+        transform: rotate(0deg)
    }
 }
 
@@ -535,7 +679,7 @@ i.fa-scale-up {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 2
 }
 
 .non-diagonal {
@@ -543,13 +687,13 @@ i.fa-scale-up {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 @media(max-width:75em) {
     .diag-inv {
         padding-top: 24rem;
-        padding-bottom: 24rem;
+        padding-bottom: 24rem
     }
 }
 
@@ -559,12 +703,12 @@ i.fa-scale-up {
 
 .flexo-grid {
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 @media(max-width:75em) {
     .flexo-grid {
-        flex-direction: column;
+        flex-direction: column
     }
 }
 
@@ -572,7 +716,7 @@ i.fa-scale-up {
     padding: 1.8rem;
     margin: 1.8rem;
     flex-grow: 1;
-    flex-basis: 0;
+    flex-basis: 0
 }
 
 
@@ -585,16 +729,16 @@ i.fa-scale-up {
     background-position: center;
     background-repeat: no-repeat;
     /* background-attachment: fixed; - to be fixed */
-    background-size: cover;
+    background-size: cover
 }
 
 .welcome-section h2 {
-    margin: 0;
+    margin: 0
 }
 
 .ticker-tape-area .input-text {
     visibility: hidden;
-    display: none;
+    display: none
 }
 
 .ticker-tape-area .output-text {
@@ -602,7 +746,7 @@ i.fa-scale-up {
     min-height: 9.0rem;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .ticker-tape-area .output-text:after {
@@ -613,15 +757,15 @@ i.fa-scale-up {
     animation-duration: 300ms;
     animation-name: fade;
     animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
 
 @keyframes fade {
     from {
-        opacity: 1;
+        opacity: 1
    }
     to {
-        opacity: 0;
+        opacity: 0
    }
 }
 
@@ -631,41 +775,41 @@ i.fa-scale-up {
 
 .about-section {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start
 }
 
 .blurb-half {
     padding: 2.4rem;
     margin: 2.4rem;
     flex-grow: 1;
-    flex-basis: 0;
+    flex-basis: 0
 }
 
 .blurb-half h2 {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .blurb-half.pleased {
-    text-align: right;
+    text-align: right
 }
 
 .blurb-half.specialize {
-    text-align: left;
+    text-align: left
 }
 
 @media(min-width:75em) {
     .blurb-half h2, .blurb-half p {
-        margin-top: 0;
+        margin-top: 0
     }
 }
 
 @media(max-width:75em) {
     .about-section {
-        flex-direction: column;
+        flex-direction: column
     }
 
     .blurb-half.pleased {
-        text-align: left;
+        text-align: left
     }
 }
 
@@ -674,12 +818,12 @@ i.fa-scale-up {
 --------------------------------------------- */
 
 .collab-grid {
-    align-items: center;
+    align-items: center
 }
 
 .collab-tile {
     margin-left: 4.2rem;
-    margin-right: 4.2rem;
+    margin-right: 4.2rem
 }
 
 
@@ -687,17 +831,17 @@ i.fa-scale-up {
 --------------------------------------------- */
 
 .testimonial-grid {
-    align-items: center;
+    align-items: center
 }
 
 .testimonial-profile-pic,
 .testimonial-text {
-    padding: 1.8rem;
+    padding: 1.8rem
 }
 
 .testimonial-profile-pic img {
     max-width: 24rem;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 
@@ -705,7 +849,7 @@ i.fa-scale-up {
 --------------------------------------------- */
 
 .contact-form {
-    max-width: 72rem;
+    max-width: 72rem
 }
 
 
@@ -714,12 +858,12 @@ i.fa-scale-up {
 
 .main-footer {
     justify-content: space-evenly;
-    padding: 4.2rem;
+    padding: 4.2rem
 }
 
 @media(max-width:75em) {
     .footer-third {
         margin: 0;
-        padding: 0;
+        padding: 0
     }
 }

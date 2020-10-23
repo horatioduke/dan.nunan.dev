@@ -1,3 +1,7 @@
+// Activate Animate on Scroll
+
+AOS.init();
+
 // Main Navigation Animation
 
 $("#nav-toggle").click(function () {

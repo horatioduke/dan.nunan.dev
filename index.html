@@ -4,6 +4,14 @@
 <head>
     <title>Dan Nunan • Web UX and Development</title>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap"
         rel="stylesheet">
@@ -28,7 +36,7 @@
 
     <!-- START NAVIGATION SECTION -->
     <section class="navigation-section" id="main_navigation">
-      
+
         <div class="overlay">
             <nav class="overlay-menu">  
                 <ul role="menu">
@@ -118,19 +126,19 @@
 
         <div class="skillz-grid flexo-grid">
             <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="250">
-                <i class="fa fa-pencil fa-scale-up"></i>
+                <i class="fa fa-pencil fa-scale-l"></i>
                 <h3>Design and Front-End Development</h3>
                 <p>I code and bring responsive websites to life with a user-driven approach that achieves your business goals. I speak HTML, Python, PHP, JS, SCSS, SASS.</p>
             </div>
     
             <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="350">
-                <i class="fa fa-universal-access fa-scale-up"></i>
+                <i class="fa fa-universal-access fa-scale-l"></i>
                 <h3>Performance, SEO, and Accessibility Testing</h3>
                 <p>I can make your website fast, easy to find, and reach the widest audience possible, using the latest testing measures and WCAG guidelines.</p>
             </div>
     
             <div class="skillz flexo-tile" data-aos="fade-up" data-aos-delay="450">
-                <i class="fa fa-cogs fa-scale-up"></i>
+                <i class="fa fa-cogs fa-scale-l"></i>
                 <h3>WordPress or Drupal? I Have You Covered</h3>
                 <p>Manage your website using one of two of the web's most popular content management systems.</p>
             </div>
@@ -154,21 +162,21 @@
         <div class="portfolio-grid flexo-grid">
 
             <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="250">
-                <img class="project-image" src="img/project.jpg" alt="project" />
+                <img class="project-image" src="img/majakosim.jpg" alt="project" />
                 <h3 class="project-title">Maja Kosim Photography</h3>
-                <button class="project-view-btn">View Project</button>
+                <button class="project-view-btn" open-modal="modal-1">View Project</button>
             </div>
 
             <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="350">
-                <img class="project-image" src="img/project.jpg" alt="project" />
-                <h3 class="project-title">Beta Boys Productions</h3>
-                <button class="project-view-btn">View Project</button>
+                <img class="project-image" src="img/betaboys.jpg" alt="project" />
+                <h3 class="project-title">Beta Boys Film Productions</h3>
+                <button class="project-view-btn" open-modal="modal-2">View Project</button>
             </div>
 
             <div class="portfolio-tile flexo-tile" data-aos="fade-up" data-aos-delay="450">
                 <img class="project-image" src="img/project.jpg" alt="project" />
-                <h3 class="project-title">Perfect Sound World</h3>
-                <button class="project-view-btn">View Project</button>
+                <h3 class="project-title">Perfect Sound World Music Therapy</h3>
+                <button class="project-view-btn" open-modal="modal-3">View Project</button>
             </div>
 
         </div>
@@ -217,24 +225,24 @@
         <div class="other-projects-grid flexo-grid">
 
             <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="250">
-                <img class="project-image" src="img/project.jpg" alt="project" />
-                <h3 class="project-title">"Peanut" Wordpress Theme</h3>
+                <img class="project-image" src="img/peanut-logo.jpg" alt="project" />
+                <h3 class="project-title">"Peanut!" Wordpress Theme</h3>
                 <p class="project-subtitle">A simple, elegant, fully-customisable photo portfolio theme.</p>
-                <button class="project-view-btn">View Project</button>
+                <a class="button project-view-btn" href="https://github.com/horatioduke/peanut" target="_blank">View Project</a>
             </div>
 
             <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="350">
                 <img class="project-image" src="img/project.jpg" alt="project" />
-                <h3 class="project-title">Fallout - On This Day</h3>
+                <h3 class="project-title">@fallouttoday Twitter Bot</h3>
                 <p class="project-subtitle">Twitter bot that generates Fallout lore based on day of the year.</p>
-                <button class="project-view-btn">View Project</button>
+                <a class="button project-view-btn" href="https://github.com/horatioduke/fallouttoday" target="_blank">View Project</a>
             </div>
 
             <div class="other-projects-tile flexo-tile" data-aos="fade-up" data-aos-delay="450">
-                <img class="project-image" src="img/project.jpg" alt="project" />
-                <h3 class="project-title">ARWhatever</h3>
+                <img class="project-image" src="img/arwhetever-logo.jpg" alt="project" />
+                <h3 class="project-title">"ARWhatever" Python Script</h3>
                 <p class="project-subtitle">A Python-based module that converts Sony ARW files to JPEG format</p>
-                <button class="project-view-btn">View Project</button>
+                <a class="button project-view-btn" href="https://github.com/horatioduke/arwhatever" target="_blank">View Project</a>
             </div>
 
         </div>
@@ -254,15 +262,17 @@
             <div class="testimonial-grid flexo-grid aos-fix">
 
                 <div class="testimonial-profile-pic" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/profile.png" alt="test"/>
+                    <img src="img/testimonial.jpg" alt="test"/>
                 </div>
 
                 <div class="testimonial-text" data-aos="fade-left" data-aos-delay="600">
                     <blockquote class="testimonial">
-                        <p>Dan is the reason I'm so rich, and he gives excellent back rubs.</p>
+                        <p>
+                            Dan is a clear communicator with the confidence that's needed to really dig in to tricky design scenarios that's in order to produce excellent work. You can trust him with your project from start to finish.”
+                        </p>
                         <footer>
-                            <cite>Bill Gates</cite>
-                            <p class="advocate-position">CEO of Microsoft</p>
+                            <cite>Maja Kosim</cite>
+                            <p class="advocate-position">Professional Photographer</p>
                         </footer>
                     </blockquote>
                 </div>
@@ -270,7 +280,7 @@
             </div>
 
     </section>
-    <!-- END TESTIMONIALS SECTION -->
+    <!-- END TESTIMONIAL SECTION -->
 
     <!-- START CONTACT SECTION -->
     <section class="contact-section non-diagonal" id="contact">
@@ -286,7 +296,11 @@
 
         </header>
 
-        <form id="contact-form" class="contact-form">
+        <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/mleobybw"
+            method="POST">
 
             <div class="form-group">
                 <label id="name-label" for="name">Name</label>
@@ -294,8 +308,8 @@
             </div>
 
             <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input id="email" type="email" name="email" class="form-control"
+                <label id="email-label" for="_replyto">Email</label>
+                <input id="email" type="email" name="_replyto" class="form-control"
                     required>
             </div>
 
@@ -319,27 +333,157 @@
     <footer class="main-footer centered-text flexo-grid aos-fix">
 
         <div class="footer-third flexo-tile" data-aos="fade-right" data-aos-delay="250">
-            <p> &copy; Dan Nunan 2020</p>
+            <p> &copy; Dan Nunan <script>document.write(new Date().getFullYear())</script></p>
         </div>
 
         <div class="footer-third flexo-tile socials" data-aos="fade-down" data-aos-delay="350">
-            <a href="#"><i class="fa fa-github fa-scale-up"></i></a><a href="#"><i class="fa fa-twitter fa-scale-up"></i></a>           
+            <a href="#"><i class="fa fa-github fa-scale-l"></i></a><a href="#"><i class="fa fa-twitter fa-scale-l"></i></a>           
         </div>
 
         <div class="footer-third flexo-tile"  data-aos="fade-left" data-aos-delay="450">
-            <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> using <a href="https://drupal.org">Drupal</a></p>            
+            <p><i class="fa fa-code"></i> with <i class="fa fa-heart"></i> using <a href="https://jekyllrb.com/">Jekyll</a></p>            
         </div>
 
     </footer>
     <!-- END FOOTER -->
 
+    <!-- START MODAL 1 -->
+
+    <section class="modal" id="modal-1">
+        <div class="floating-box">
+
+            <div class="close" close-modal>
+                <i class="fa fa-close fa-scale-m"></i>
+            </div>
+
+            <div class="glide">
+                
+                <div class="glide__track" data-glide-el="track">
+                    
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                    </ul>
+
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+
+                    <div class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left fa-scale-s"></i></div>
+                    <div class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right fa-scale-s"></i></div>
+                
+                </div>
+
+            </div>
+
+            <div class="floating-box-text">
+                <h2 class="scale-down">Maja Kosim Photography</h2>
+                <p>Personalised photography website for professional photographer.</p>
+                <a class="button" href="https://majakosimphotography.com" target="_blank">View Site</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END MODAL 1 -->
+
+    <!-- START MODAL 2 -->
+
+    <section class="modal" id="modal-2">
+        <div class="floating-box">
+
+            <div class="close" close-modal>
+                <i class="fa fa-close fa-scale-m"></i>
+            </div>
+
+            <div class="glide">
+                
+                <div class="glide__track" data-glide-el="track">
+                    
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                    </ul>
+
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+
+                    <div class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left fa-scale-s"></i></div>
+                    <div class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right fa-scale-s"></i></div>
+                
+                </div>
+
+            </div>
+
+            <div class="floating-box-text">
+                <h2 class="scale-down">Beta Boys Fim Production</h2>
+                <p>Fully responsive, bespoke 90s retro website.</p>
+                <a class="button" href="https://betaboysproductions.com" target="_blank">View Site</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END MODAL 2 -->
+
+    <!-- START MODAL 3 -->
+
+    <section class="modal" id="modal-3">
+        <div class="floating-box">
+
+            <div class="close" close-modal>
+                <i class="fa fa-close fa-scale-m"></i>
+            </div>
+
+            <div class="glide">
+                
+                <div class="glide__track" data-glide-el="track">
+                    
+                    <ul class="glide__slides">
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                        <li class="glide__slide"><img src="img/project.jpg" /></li>
+                    </ul>
+
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+
+                    <div class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa fa-chevron-left fa-scale-s"></i></div>
+                    <div class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa fa-chevron-right fa-scale-s"></i></div>
+                
+                </div>
+
+            </div>
+
+            <div class="floating-box-text">
+                <h2 class="scale-down">Perfect Sound World Music Therapy</h2>
+                <p>Business showcase website for independent music therapy practitioner.</p>
+                <a class="button" href="https://http://perfectsoundworld.co.uk/" target="_blank">View Site</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- END MODAL 3 -->
+
 </body>
 
 <!-- START SCRIPTS -->
+
 <script
     src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
+
+<script
+    src="js/glide.min.js"></script>
 
 <script
     src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -348,7 +492,7 @@
     language="JavaScript"
     type="text/javascript"
     src="js/scripts.js"></script>
-
+    
 <!-- END SCRIPTS -->
 
 </html>

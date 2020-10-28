@@ -17,6 +17,8 @@ Ello! This is the stylesheet for dan.nunan.dev
     - Image and FontAwesome Icon Fixes
     - dan.nunan.dev Specials
     - Socials
+    - Modals
+    - Glider
 # Main Navigation
     - The Burger
     - The Menu Overlay
@@ -257,6 +259,13 @@ h4 { font-size: 4.2rem }
 h5 { font-size: 3.6rem }
 h6 { font-size: 3.0rem }
 
+h1.scale-down { font-size: 4.8rem }
+h2.scale-down { font-size: 4.2rem }
+h3.scale-down { font-size: 3.6rem }
+h4.scale-down { font-size: 3.0rem }
+h5.scale-down { font-size: 2.4rem }
+h6.scale-down { font-size: 1.8rem }
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
@@ -317,7 +326,8 @@ button, .button {
     top: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.4rem;
-    line-height: 1.5
+    line-height: 1.5;
+    display: inline-block
 }
 
 button:hover, .button:hover {
@@ -350,7 +360,8 @@ input, textarea {
     border-radius: 0.24rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: var(--main-black);
-    box-shadow: 5px 5px var(--main-black)
+    box-shadow: 5px 5px var(--main-black);
+    line-height: 1.5
 }
 
 textarea {
@@ -376,7 +387,7 @@ blockquote {
     font-size: 2.4rem;
     font-style: italic;
     color: var(--main-gray);
-    padding: 7.8rem 3.6rem 4.2rem 6rem;
+    padding: 9.0rem 3.6rem 4.2rem 6.0rem;
     border-left: 8px solid var(--main-yellow);
     border-right: 8px solid var(--main-yellow);
     line-height : 1.5;
@@ -391,8 +402,8 @@ blockquote::before {
     color: var(--main-red);
     font-size: 7.2rem;
     position: absolute;
-    left: 3.0rem;
-    top: 4.8rem
+    top: 6.0rem;
+    left: 3.0rem
 }
 
 blockquote::after {
@@ -419,8 +430,16 @@ img {
     height: auto
 }
 
-i.fa-scale-up {
+i.fa-scale-l {
     font-size: 7.2rem
+}
+
+i.fa-scale-m {
+    font-size: 4.8rem
+}
+
+i.fa-scale-s {
+    font-size: 3.0rem
 }
 
 
@@ -474,6 +493,228 @@ i.fa-scale-up {
     color: var(--main-white)
 }
 
+
+/* Modals
+--------------------------------------------- */
+
+.modal {
+    position: fixed;
+    pointer-events: none;
+    top: 0px;
+    left: 0px;
+    background: rgba(51,51,51,0.75);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.3s
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.modal.active .floating-box {
+    top: 50%
+}
+
+.modal .close {
+    cursor: pointer;
+    color: var(--main-white);
+    transition: 0.3s;
+    z-index: 5
+}
+
+.modal .close:hover {
+    color: var(--main-red);
+    transition: 0.3s
+}
+
+.modal .floating-box {
+    display: block;
+    border-radius: 0.24rem;
+    text-align: left;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+    max-width: 600px
+}
+
+.modal .floating-box-text {
+    clip-path: polygon(0 3.6rem, 100% 0, 100% calc(100% - 3.6rem), 0 100%);
+    padding: 3.0rem 3.0rem 6.0rem 3.0rem;
+    background: var(--main-black)
+}
+
+.modal .floating-box-text p {
+    padding-bottom:1.8rem
+}
+
+.modal .floating-box h3 {
+    color: var(--main-red);
+    margin-bottom: 0
+}
+
+
+/* Glider
+--------------------------------------------- */
+
+.glide {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.glide * {
+    box-sizing: inherit
+}
+
+.glide__track {
+    overflow: hidden;
+    clip-path: polygon(0 3.6rem, 100% 0, 100% calc(100% - 4.2rem), 0 calc(100% - 0.6rem))
+}
+
+.glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+    margin-bottom: 0;
+    margin-top: 0
+}
+
+.glide__slides--dragging {
+    user-select: none
+}
+
+.glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+.glide__slide a {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.glide__arrows {
+    -webkit-touch-callout: none;
+    user-select: none
+}
+
+.glide__bullets {
+    -webkit-touch-callout: none;
+    user-select: none
+}
+
+.glide--rtl {
+    direction: rtl
+}
+
+.glide__arrow {
+    position: absolute;
+    display: block;
+    top: 50%;
+    z-index: 2;
+    color: var(--main-white);
+    text-transform: uppercase;
+    padding: 0.6rem 1.2rem;
+    text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+    transform: translateY(-50%);
+    line-height: 1
+}
+
+.glide__arrow:focus {
+    outline: none
+}
+
+.glide__arrow:hover {
+    color: var(--main-red);
+    transition: all .2s ease-out
+}
+
+.glide__arrow--left {
+    left: 2em
+}
+
+.glide__arrow--right {
+    right: 2em
+}
+
+.glide__arrow--disabled {
+    opacity: 0.33
+}
+
+.glide__bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 2em;
+    left: 50%;
+    display: inline-flex;
+    list-style: none;
+    transform: translateX(-50%)
+}
+
+.glide__bullet {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+    line-height: 0;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
+    margin: 0 0.25em
+}
+
+.glide__bullet:focus {
+    outline: none
+}
+
+.glide__bullet:hover,
+.glide__bullet:focus {
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+.glide__bullet--active {
+    background-color: white
+}
+
+.glide--swipeable {
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab
+}
+
+.glide--dragging {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing
+}
 
 /*--------------------------------------------------------------
 # Main Navigation
@@ -566,7 +807,7 @@ i.fa-scale-up {
 
 .overlay {
     position: fixed;
-    background: var(--main-blue);
+    background: var(--main-black);
     top: 0;
     left: 0;
     width: 100%;
@@ -637,13 +878,13 @@ i.fa-scale-up {
 
 .overlay-menu ul li a {
     display: inline-block;
-    color: var(--main-white);
+    color: var(--main-black);
     text-decoration: none;
     font-size: 6rem;
     padding: 10px 40px;
     margin: 5px 0;
     transition: 0.2s;
-    background: var(--main-blue)
+    background: var(--main-white)
 }
 
 .overlay-menu ul li a:hover, .overlay-menu ul li a:active, .overlay-menu ul li a:focus {
@@ -831,12 +1072,24 @@ i.fa-scale-up {
 --------------------------------------------- */
 
 .testimonial-grid {
-    align-items: center
+    align-items: center;
+    max-width: 120rem
 }
 
 .testimonial-profile-pic,
 .testimonial-text {
     padding: 1.8rem
+}
+
+.testimonial-profile-pic {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center
+}
+
+.testimonial-text {
+    flex-grow: 2;
+    flex-basis: 0
 }
 
 .testimonial-profile-pic img {
